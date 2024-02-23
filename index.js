@@ -1,5 +1,7 @@
+const _ = require('lodash');
+
 function random(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
+    return _.random(min, max);
 }
 
 module.exports = random;

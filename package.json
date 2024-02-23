@@ -8,9 +8,12 @@
   },
   "repository": {
     "type": "git",
-      "url": "git+https://github.com/lk0pa/simple-tea-random"
+    "url": "git+https://github.com/lk0pa/simple-tea-random"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }
