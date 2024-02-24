@@ -1,0 +1,352 @@
+.tc2rst {
+    
+    font-size: 10pt;
+    
+}
+.tc2rst * {
+    
+    font-family: Arial;
+    box-sizing: border-box;
+    
+}
+.tc2rst h3 {
+    
+    margin-top: 0;
+    
+}
+.example-data > * {
+    
+    margin: 10px;
+    
+}
+.profile-card {
+    
+    display: flex;
+    flex-direction: column;
+    
+}
+.unstyled-example,
+.styled-example {
+    
+    min-height: 300px;
+    
+}
+.unstyled-example .profile-card .profile-avatar {
+    
+    max-width: 300px;
+    
+}
+.styled-example .profile-card {
+    
+    --avatar-size: 130px;
+    box-shadow: 0 0 30px -10px black;
+    border-radius: 5px;
+    padding: 20px calc(40px + var(--avatar-size)) 20px 20px ;
+    position: relative;
+    font-family: Arial;
+    min-height: var(--avatar-size);
+    max-width: 600px;
+    width: 600px;
+
+}
+.styled-example .profile-card .profile-swatch {
+    
+    display: none;
+    
+}
+.styled-example .profile-card .profile-avatar {
+    
+    border-radius: 50%;
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    background-color: var(--profile-color);
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    overflow: hidden;
+    
+}
+.styled-example .profile-card .profile-avatar svg {
+    
+    margin: 20px;
+    max-width: calc(var(--avatar-size) - 40px);
+    max-height: calc(var(--avatar-size) - 40px);
+    
+}
+.styled-example .profile-card .profile-avatar img {
+    
+    max-width: var(--avatar-size);
+    max-height: var(--avatar-size);
+}
+.styled-example .profile-card h3 {
+    
+    display: block;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+    color: rgba(0,0,0,0.7);
+    border-bottom: solid 5px var(--profile-color);
+    
+}
+.styled-example .profile-card .profile-blurb {
+    
+    line-height: 1.5em;
+    white-space: pre-line;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.profile-card-editor label {
+    
+    display: block;
+
+}
+.profile-card-editor label > span {
+    
+    display: inline-block;
+    width: 100px;
+    vertical-align: top;
+    padding: 10px;
+    
+}
+.profile-card-editor input[type=text],
+.profile-card-editor textarea {
+    
+    padding: 10px;
+    margin-bottom: 10px;
+    
+}
+.profile-card-editor input[type=color] {
+    
+    height: 30px;
+    width: 100px;
+    margin-bottom: 10px;
+    
+}
+.profile-card-editor .avatar-picker,
+.profile-card-editor .swatch-picker {
+    
+    background-color: rgba(255,255,255,0.9);
+    margin-left: 110px;
+    margin-bottom: 20px;
+    max-width: 800px;
+    
+}
+.profile-card-editor aside {
+    
+    line-height: 1.5em;
+    max-width: 600px;
+    display: block;
+}
+.profile-card-editor .avatar-picker svg {
+    
+    height: 50px;
+    padding: 10px;
+    
+}
+.profile-card-editor .avatar-picker svg:hover {
+    
+    background-color: #EEE;
+    
+}
+.profile-card-editor .profile-color-swatch {
+    
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin: 10px 10px 10px 0;
+    
+}
+.profile-card-editor input[type=text] {
+    
+    width: 400px;
+    
+}
+.profile-card-editor textarea {
+    
+    min-width: 500px;
+    min-height: 100px;
+    
+}
+.team-example {
+    
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+    
+}
+.team-example .styled-example {
+    
+    position: absolute;
+    
+}
+.team-example .profile-card {
+    
+    border-radius: 20px;
+    box-shadow: 0 0 30px -10px silver;
+    width: 700px;
+    max-width: 700px;
+    min-height: 190px;
+    position: absolute;
+    left: 40px;
+    background-color: white;
+    transform-origin: right;
+    
+}
+.team-example .profile-card .profile-blurb {
+    
+    font-size: 11pt;
+    
+}
+.team {
+    
+    position: relative;
+    --logo-size: 100px;
+    
+}
+.team * {
+    
+    box-sizing: border-box;
+    font-family: Arial;
+    
+}
+.team .team-name     {
+    
+    font-size: 3em;
+    letter-spacing: 2px;
+    color: #555;
+    padding-left: calc(var(--logo-size) + 20px);
+    margin: 0 0 10px 0;
+    line-height: var(--logo-size);
+
+}
+.team .team-logo {
+    
+    width: var(--logo-size);
+    position: absolute;
+    top: 0;
+    
+}
+.team .profile-card {
+    
+    margin: 20px 0;
+    width: 700px;
+    max-width: 700px;
+    height: 190px;
+    border-radius: 20px;
+    box-shadow: 0 0 30px -10px silver;
+    
+}
+.team .profile-blurb {
+    
+    font-size: 11pt;
+    
+}
+.team .profile-name {
+    
+    font-size: 1.5em;
+    
+}
+
+
+
+
+.team-editor {
+    
+    display: grid;
+    grid-template-columns: min-content auto;
+    
+}
+.team-editor .team-details-editor {
+    
+    grid-column-start: 1;
+    grid-column-end: 3;
+    
+}
+.team-editor .profile-card {
+    
+    grid-column-start: 1;
+    grid-column-end: 2;
+    
+}
+.team-editor .profile-card-editor {
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 20px;
+
+}
+.team-editor .profile-actions {
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 20px;
+    
+}
+.team-editor .profile-actions button {
+    
+    font-size: 1em;
+    padding: 10px 20px;
+    border-radius: 5px;
+    min-width: 200px;
+    
+}
+.team-editor .profile-actions .danger-button {
+    
+    box-shadow: 0 0 20px -10px red;
+    background-color: #FEE;
+    color: red;
+    
+}
+.team-details-editor input[type=text] {
+    
+    padding: 10px;
+    display: block;
+    width: 600px;
+    margin-bottom: 10px;
+    
+}
+.team-editor .team-name-editor {
+    
+    font-size: 1.5em;
+    
+}
+.team-editor .team-logo {
+    
+    position: static;
+    margin-bottom: 10px;
+    float: left;
+    
+}
+.team-editor .profile-card {
+    
+    background-color: white;
+    transition: all 0.5s;
+    
+}
+.team-editor .profile-card > * {
+    
+    transition: all 0.5s;
+    
+}
+.team-editor .profile-card + .profile-card {
+    
+    margin-top: -130px;
+    
+}
+.team-editor .profile-card.undefined {
+    
+    opacity: 0.7;
+    
+}
+.team-editor .profile-card.selected + .profile-card {
+    
+    margin-top: 0;
+    
+}
+.team-editor.editing .profile-card:not(.selected) > * {
+    
+    opacity: 0.2;
+    filter: blur(3px);
+    
+}

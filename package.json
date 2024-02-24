@@ -1,19 +1,38 @@
 {
   "name": "simple-tea-random",
-  "version": "1.0.2",
-  "description": "",
-  "main": "index.js",
+  "version": "1.0.3",
+  "description": "Simple teams for react by tc2",
+  "main": "dist/bundle.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "react": "^16.4.0",
+    "react-dom": "^16.4.0",
+    "shortid": "^2.2.8",
+    "svg-react-loader": "^0.4.5",
+    "webpack": "^4.8.3",
+    "webpack-bundle-analyzer": "^2.13.1",
+    "webpack-cli": "^2.1.4",
+    "webpack-dev-server": "^3.1.4"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --config webpack.config.live-example",
+    "build": "webpack; webpack --config webpack.config.live-example"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lk0pa/simple-tea-random"
+    "url": "git+https://github.com/lk0pa/simple-tea-random.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "lodash": "^4.17.21"
-  }
+  "author": "tinycode2",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lk0pa/simple-tea-random/issues"
+  },
+  "homepage": "https://github.com/lk0pa/simple-tea-random#readme"
 }
