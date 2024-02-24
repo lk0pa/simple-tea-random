@@ -1,6 +1,6 @@
 {
   "name": "simple-tea-random",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple teams for react by tc2",
   "main": "dist/bundle.js",
   "directories": {
