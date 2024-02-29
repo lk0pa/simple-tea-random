@@ -1,6 +1,6 @@
 {
   "name": "simple-tea-random",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Simple teams for react by tc2",
   "main": "dist/bundle.js",
   "directories": {
@@ -27,7 +27,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/lk0pa/simple-tea-random.git"
+    "url": "git+https://github.com/lk0pa/simple-tea-random"
   },
   "author": "tinycode2",
   "license": "MIT",
